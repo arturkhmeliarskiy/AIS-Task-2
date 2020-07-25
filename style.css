@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
 }
-header{
-    height: 140px;
-    width: auto;
-}
 .logo img{
     width: 15px;
     height: 15px;
@@ -23,6 +19,7 @@ header{
     height: 30px;
     background: rgb(255, 255, 255);
     padding: 0px;
+    width: 100%;
 }
 header hr{
    background: rgb(221, 221, 221);
@@ -130,6 +127,7 @@ header hr{
     margin: -18px -115px 0 0;
 }
 .widgets{
+    width: 100%;
     height: 75px;
 }
 .parameters{
@@ -214,12 +212,14 @@ header hr{
     margin-right: 10px;
 }
 .chat{
+    position: relative;
     top: 0;
     width: 100%;
     height: 800px;
 }
 .interlocutors{
-    width: 280px;
+    z-index: 2;
+    width: 15%;
     height: 100%;
     float: left;
 }
@@ -308,6 +308,7 @@ input {
     height: 70px;
     border-bottom: 1px  solid #e4e4e4;
     cursor: pointer;
+    background-color: #ffffff;
 }
 .interlocutor1:hover{
     background-color: #e7e7e7;
@@ -365,22 +366,24 @@ input {
     position: absolute;
     width: 1px;
     height: 800px;
-    margin: 0 0 0 280px;
+    left: 280px;
     background: #cccccc;
 }
 .line2{
+    z-index: -9999;
     position: absolute;
-    width: 85%;
+    width: 100%;
     height: 1px;
-    margin: 25px 0 0 280px;
+    
+    bottom: 54px;
     background: #cccccc;
 }
 .messages{
     height: 90%;
-    width: 85%;
+    width: 75%;
     position: relative;
     top: 0;
-    left: 280px;
+    left: 20%;
 }
 .messages #date{
     font-family: Arial, Helvetica, sans-serif;
@@ -391,7 +394,9 @@ input {
 }
 .correspondence{
     position: absolute;
-    margin: 80px 0 0 420px;
+    top: 12%;
+    left: 26%;
+    /* margin: 80px 0 0 420px; */
     padding: 0;
     width: 300px;
     height: 100px;
@@ -448,7 +453,9 @@ input {
 
 .correspondence1{
     position: absolute;
-    margin: 160px 0 0 820px;
+    top: 22%;
+    right: 26%;
+    /* margin: 160px 0 0 820px; */
     padding: 0;
     width: 300px;
     height: 100px;
@@ -499,7 +506,9 @@ input {
 }
 .correspondence2{
     position: absolute;
-    margin: 230px 0 0 420px;
+    top: 31%;
+    left: 26%;
+    /* margin: 230px 0 0 420px; */
     padding: 0;
     width: 300px;
     height: 100px;
@@ -533,7 +542,9 @@ input {
 }
 .correspondence3{
     position: absolute;
-    margin: 270px 0 0 820px;
+    top: 38%;
+    right: 26%;
+    /* margin: 270px 0 0 820px; */
     padding: 0;
     width: 300px;
     height: 100px;
@@ -562,16 +573,17 @@ input {
 }
 .wrmessage{
     position: relative;
+    padding: 0;
     height: 7%;
-    width: 85%;
-    left: 280px;
+    width: 100%;
     top: 25px;
+    /* background-color: #098309; */
 }
 .wrmessage .iconk{
     position: absolute;
     height: 30px;
     width: 90px;
-    margin: 18px 0 0 20px;
+    margin: 18px 0 0 300px;
 }
 .iconk #dagger{
     height: 18px;
@@ -585,17 +597,17 @@ input {
 }
 .input{
     position: absolute;
-    width: 1420px;
+    width: 50%;
     height: 40px;
-    margin: 10px 0 0 110px;
+    margin: 10px 0 0 360px;
 }
 .input input{
-    margin-left: 0px;
     height: 40px;
+    
 }
 .microphone{
-    position: absolute;
-    margin: 10px 0 0 1540px;
+    margin: 10px 10px 0 0;
+    float: right;
 }
 .microphone img{
     cursor: pointer;;
