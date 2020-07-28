@@ -651,7 +651,7 @@ input {
 }
 @media (max-width: 1280px) {
     .messages{
-        height: 500px;
+        height: 520px;
     }
     .interlocutors{
         height: 500px;
