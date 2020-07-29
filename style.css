@@ -331,7 +331,7 @@ input, #seabutton {
 }
 #active{
     background-color: #e7eaf1;
-    width: 280px;
+    width: 30vh;
     height: 9%;
 }
 .inter{
